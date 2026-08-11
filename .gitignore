@@ -1,0 +1,18 @@
+# Stitch MCP cache + temporary build artifacts
+.stitch-mcp/
+routes.json
+suggested-routes.json
+
+# Astro build
+dist/
+.astro/
+
+# Dependencies
+node_modules/
+
+# Env (defense in depth — root .gitignore already covers .env)
+.env
+.env.*
+!.env.example
+
+.vercel
