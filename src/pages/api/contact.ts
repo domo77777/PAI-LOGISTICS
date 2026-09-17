@@ -71,9 +71,9 @@ export const POST: APIRoute = async ({ request }) => {
     from: 'Prospectum AI Web <web@prospectumai.com>',
     to: 'paisa@prospectumai.com',
     replyTo: email,
-    // Decia "Contacto prospectum.mx", que es un dominio viejo. Se deja neutro a proposito
-    // hasta que quede confirmado cual es el dominio de produccion.
-    subject: `Contacto web — ${nombre}`,
+    // Decia "Contacto prospectum.mx", un dominio viejo. Diego confirmo el 17-sep-2026 que el de
+    // produccion es prospectumai.com.
+    subject: `Contacto prospectumai.com — ${nombre}`,
     text: [
       `Nombre: ${nombre}`,
       `Email: ${email}`,
